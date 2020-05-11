@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Plante::Plante(string nom) : a_hydratation(100), a_nom(nom), a_sante(100), a_taille(0), a_enVie(1) {
+Plante::Plante(string nom) : a_hydratation(100), a_nom(nom), a_sante(100), a_taille(0), a_enVie(1), a_valeur(0) {
  };
 
 void Plante::arroser(){
@@ -55,20 +55,22 @@ void Plante::tailler(){
 };
 
 void Plante::pousser(){
-    if (a_sante > 50)
-    {
-        a_taille += 10;
-    } else if (a_sante <= 50)
-    {
-        a_taille += 5;
-    } else if (a_sante <= 0)
-    {
-        cout << a_nom << " est morte.." << endl;
-        a_enVie = 0;
-    }
-        if (a_taille >= 100){
-            cout << a_nom << " est arrivée à maturité." << endl;
+    
+        if (a_sante > 50)
+        {
+            a_taille += 10;
+        } else if (a_sante <= 50)
+        {
+            a_taille += 5;
+        } else if (a_sante <= 0)
+        {
+            cout << a_nom << " est morte.." << endl;
+            a_enVie = 0;
         }
+            if (a_taille >= 100){
+                cout << a_nom << " est arrivée à maturité." << endl;
+                a_valeur = 10;
+            }
     
     
     
@@ -97,6 +99,10 @@ string Plante::setNom(){
 
 Plante::~Plante(){
     
-};hyd
+};
+
+int Plante::getValeur(){
+    return a_valeur;
+};
 
 #endif

@@ -50,7 +50,7 @@ void Botaniste::acheterPlante()
 
 void Botaniste::vendrePlante(Plante &cible)
 {
-    a_argent += 15;
+    a_argent += cible.getValeur();
     a_nbrePlantes -= 1;
     cout << "Vous vendez " << cible.getNom() << endl;
     jardin.pop_back(Plante &cible);

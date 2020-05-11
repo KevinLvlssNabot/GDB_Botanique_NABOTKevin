@@ -9,13 +9,15 @@
 class Fleur : public Plante
 {
 public:
-    Fleur(int a_hydratation, std::string a_nom, int a_taille, bool a_enVie);
+    Fleur(std::string a_nom, int a_jourPasses);
 
 private:
     std::string a_nom;
     int a_hydratation;
     int a_taille;
     bool a_enVie;
+    int a_valeur;
+    int a_jourPasses;
 };
 
 #endif

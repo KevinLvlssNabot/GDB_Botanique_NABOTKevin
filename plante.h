@@ -13,7 +13,8 @@ public:
     void tailler();
     void donnerEngrais();
     void afficherEtat();
-    void pousser();
+    void virtual pousser();
+    int getValeur();
     std::string getNom();
     std::string setNom();
     ~Plante();
@@ -24,6 +25,8 @@ protected:
     int a_sante;
     int a_taille;
     bool a_enVie;
+    int a_valeur;
+    int a_jourPasses;
 };
 
 #endif
