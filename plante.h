@@ -15,8 +15,10 @@ public:
     void afficherEtat();
     void pousser();
     std::string getNom();
+    std::string setNom();
+    ~Plante();
 
-private:
+protected:
     int a_hydratation;
     std::string a_nom;
     int a_sante;
