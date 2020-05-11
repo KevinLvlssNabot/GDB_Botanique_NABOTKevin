@@ -14,7 +14,7 @@ using namespace std;
 int main(){
     Plante ibiscus("Ibiscus");
     Botaniste greenhand ("Greenhand");
-    vector<Plante> jardin(Plante ibiscus);
+        jardin.push_back(ibiscus);
 
         ibiscus.afficherEtat();
         ibiscus.arroser();

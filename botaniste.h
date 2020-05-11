@@ -14,7 +14,7 @@ class Botaniste
         void donnerEngrais(Plante &cible);
         void acheterPlante();
         void vendrePlante(Plante &cible);
-        void dormir();
+        void dormir(Plante &cible);
         std::string getNomBotaniste();
     
     private:

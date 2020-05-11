@@ -56,10 +56,10 @@ void Botaniste::vendrePlante(Plante &cible)
     jardin.pop_back(Plante &cible);
 };
 
-void Botaniste::dormir(){
+void Botaniste::dormir(Plante &cible){
         for (int i = 0; i < jardin.size(); i++)
         {
-            Plante.pousser();
+            cible.pousser();
         }
         
 };

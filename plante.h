@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <vector>
 
 class Plante
 {
@@ -17,6 +17,7 @@ public:
     int getValeur();
     std::string getNom();
     std::string setNom();
+    std::vector<Plante> jardin(Plante);
     ~Plante();
 
 protected:
